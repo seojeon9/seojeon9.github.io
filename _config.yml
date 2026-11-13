@@ -19,6 +19,7 @@ author:
       url: https://github.com/seojeon9
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-include-cache
   - jekyll-feed

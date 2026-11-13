@@ -1,0 +1,5 @@
+# Local preview: bundle exec jekyll serve --config _config.yml,_config.dev.yml
+theme: minimal-mistakes-jekyll
+remote_theme: null
+url: http://127.0.0.1:4000
+plugins: [jekyll-paginate, jekyll-include-cache, jekyll-feed, jekyll-seo-tag]
