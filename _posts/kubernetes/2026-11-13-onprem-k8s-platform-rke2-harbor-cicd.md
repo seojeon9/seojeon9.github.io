@@ -45,7 +45,7 @@ last_modified_at: 2026-11-13
 이 시리즈는 사내 데이터 수집 배치를 쿠버네티스 위로 옮긴 프로젝트를 두 편으로 나눠 정리한 기록이다.
 
 - **1편 (이 글)**: 실행 플랫폼. 서버 준비부터 RKE2 클러스터, Helm, Harbor, GitLab CI까지 "컨테이너를 돌릴 땅"을 만든 과정
-- **2편**: 그 위에 Airflow를 Helm으로 올리고, git-sync로 DAG을 배포하고, KubernetesPodOperator(KPO)로 task를 Pod 단위로 실행한 과정
+- **[2편](/kubernetes/airflow-on-k8s-gitsync-kpo/)**: 그 위에 Airflow를 Helm으로 올리고, git-sync로 DAG을 배포하고, KubernetesPodOperator(KPO)로 task를 Pod 단위로 실행한 과정
 
 배치 실행 시간 단축 같은 성과는 대부분 2편의 파이프라인 재설계에서 나왔다. 이 글은 그 재설계가 돌아갈 수 있는 **자원과 표준 실행 환경**을 어떻게 만들었는지에 집중한다.
 
@@ -475,7 +475,7 @@ build-and-push:
 - **제약이 구조를 정했다.** 폐쇄망·구형 Docker·사설 인증서 때문에 DinD, if-not-present, containerd CA 배포라는 형태가 됐다.
 - **구축보다 운영이 길었다.** 인증서 자동 갱신, 이미지 GC처럼 오래 운영해야 보이는 문제를 체크리스트와 알림으로 바꿨다.
 
-다음 편에서는 이 클러스터 위에 Airflow를 Helm으로 올리고, git-sync와 KubernetesPodOperator로 배치를 Pod 단위로 실행한 과정을 정리한다.
+[다음 편](/kubernetes/airflow-on-k8s-gitsync-kpo/)에서는 이 클러스터 위에 Airflow를 Helm으로 올리고, git-sync와 KubernetesPodOperator로 배치를 Pod 단위로 실행한 과정을 정리한다.
 
 ---
 
