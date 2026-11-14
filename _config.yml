@@ -13,6 +13,7 @@ paginate_path: /page:num/
 
 author:
   name: seojeon9
+  avatar: /assets/images/72624263.jpeg
   bio: 데이터는 새지 않게, 순간은 흩어지지 않게
   links:
     - label: GitHub
