@@ -10,3 +10,32 @@ search: false
 
 // Theme grows the base font to 20-22px on wide screens; keep it at 16px.
 html { font-size: 16px; }
+
+// Masthead: subtitle sits to the right of the title
+.site-title { flex-direction: row; align-items: baseline; gap: 0.75em; }
+.site-subtitle { display: inline; font-size: 0.8rem; font-weight: normal; opacity: 0.7; }
+@media (max-width: 47.99em) { .site-subtitle { display: none; } }
+
+// Wider reading area on large screens (theme caps at 1280px)
+@media (min-width: 80em) {
+  #main, .masthead__inner-wrap, .page__footer footer { max-width: 1600px; }
+}
+
+// Keep "On this page" in its own right column with a gap from the text
+@media (min-width: 64em) {
+  .sidebar__right { padding-inline-start: 2em; }
+}
+
+// Previous / Next: small pill links instead of full-width blocks
+.pagination--pager {
+  width: auto;
+  padding: 0.35em 1em;
+  font-size: 0.8em;
+  font-weight: normal;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 999px !important;
+}
+.pagination--pager:first-child::before { content: "← "; }
+.pagination--pager:last-child { float: inline-end; margin-inline-start: 0; }
+.pagination--pager:last-child::after { content: " →"; }
+.pagination--pager.disabled { visibility: hidden; }

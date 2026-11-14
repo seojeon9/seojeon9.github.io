@@ -15,10 +15,10 @@ Airflow 오케스트레이션부터 Kubernetes 워크로드, 스토리지와 컨
 
 | 흐름 | 해 온 일 |
 |---|---|
-| **Data Foundation** | 트렌드 키워드·다채널 리뷰 수집 파이프라인 운영, ETL 안에 정합성 검증(DQ) 단계 추가, 레거시 코드 리팩토링 |
-| **Data Platform** | 흩어진 배치 서버를 RKE2 기반 Kubernetes로 통합, Airflow + KubernetesPodOperator 실행 구조, Snowflake DW 전환 |
-| **AI Agent Platform** | MCP 기반 사내 AI 에이전트와 멀티에이전트 라우팅 고도화(턴당 LLM 호출 5~6회 → 1~3회), 답변 품질 모니터링 도구 구축 |
-| **Enterprise AI Enablement** | 현업이 AI 코딩 에이전트로 직접 데이터를 조회하는 데이터 서비스, 사내 데이터를 지식그래프(온톨로지)로 만든 GraphRAG 기반 데이터 질의, SAP 연동 결산 자동화(8명 → 1명 30분) |
+| **Data Foundation** | API·크롤링 기반 데이터 수집 파이프라인 설계와 운영, ETL 단계에 데이터 품질 검증 내장, 레거시 파이프라인 모듈화 |
+| **Data Platform** | 베어메탈 배치 서버를 Kubernetes 클러스터로 통합, Airflow on Kubernetes 실행 구조 설계, 사설 레지스트리 기반 CI/CD, 클라우드 DW 전환 |
+| **AI Agent Platform** | MCP 서버 개발과 컨테이너 배포 표준화, LLM 멀티에이전트 라우팅 설계, 트레이싱 기반 답변 품질 모니터링 |
+| **Enterprise AI Enablement** | AI 코딩 에이전트가 쓰는 데이터 API와 가이드 설계, 지식그래프 기반 GraphRAG 데이터 질의, 인증 게이트웨이를 둔 MCP 연동 |
 
 **주로 쓰는 기술** — Airflow · Kubernetes(RKE2) · Helm · Snowflake · Python · SQL · AWS · Neo4j · MCP · Claude Code
 
