@@ -35,7 +35,7 @@ last_modified_at: 2026-11-13
 
 |항목|내용|
 |---|---|
-|기간|2025.01 ~ 2025.08 (8개월), 이후 2026.10까지 운영|
+|기간|2025.01 ~ 2025.08 (8개월, PoC → 구축)|
 |역할|설계·구축·운영 주도 (사내 장애예방 과제 수행)|
 |규모|IDC 서버 4대 → 이후 AWS EC2 워커를 붙여 하이브리드로 확장|
 |스택|Rocky Linux 8.10, RKE2 v1.31, Rancher, cert-manager, Helm 3, Harbor, GitLab CE, GitLab Runner(Docker executor + DinD)|
@@ -47,7 +47,7 @@ last_modified_at: 2026-11-13
 - **1편 (이 글)**: 실행 플랫폼. 서버 준비부터 RKE2 클러스터, Helm, Harbor, GitLab CI까지 "컨테이너를 돌릴 땅"을 만든 과정
 - **[2편](/kubernetes/airflow-on-k8s-gitsync-kpo/)**: 그 위에 Airflow를 Helm으로 올리고, git-sync로 DAG을 배포하고, KubernetesPodOperator(KPO)로 task를 Pod 단위로 실행한 과정
 
-배치 실행 시간 단축 같은 성과는 대부분 2편의 파이프라인 재설계에서 나왔다. 이 글은 그 재설계가 돌아갈 수 있는 **자원과 표준 실행 환경**을 어떻게 만들었는지에 집중한다.
+배치 실행 시간 단축 같은 성과는 대부분 2편의 파이프라인 재설계에서 나왔다. 프로젝트 기간 8개월도 대부분은 플랫폼 구축이 아니라 2편에서 다룰 레거시 코드 컨테이너화에 들어갔다. 이 글은 그 재설계가 돌아갈 수 있는 **자원과 표준 실행 환경**을 어떻게 만들었는지에 집중한다.
 
 ---
 
