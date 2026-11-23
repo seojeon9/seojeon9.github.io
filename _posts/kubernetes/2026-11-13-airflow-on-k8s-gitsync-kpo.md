@@ -35,7 +35,7 @@ last_modified_at: 2026-11-13
 
 |항목|내용|
 |---|---|
-|기간|2025.02 ~ 2026.10 (PoC → 구축 → 운영)|
+|기간|2025.01 ~ 2025.08 (8개월), 이후 2026.10까지 운영|
 |역할|설계·구축·운영 주도, 배치 코드 컨테이너화와 DAG 재설계|
 |대상|트렌드 키워드 수집, 경쟁사 몰 상품 수집, 상품 리뷰 수집, 상품 이미지 아카이빙 등 사내 데이터 수집 배치|
 |스택|Airflow 2.9 (Helm chart), KubernetesExecutor, KubernetesPodOperator, git-sync, Harbor, GitLab CI, NFS(RWX), Prometheus·Grafana|

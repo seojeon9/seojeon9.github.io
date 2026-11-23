@@ -35,7 +35,7 @@ last_modified_at: 2026-11-13
 
 |항목|내용|
 |---|---|
-|기간|2025.02 ~ 2026.10 (PoC → 구축 → 운영)|
+|기간|2025.01 ~ 2025.08 (8개월), 이후 2026.10까지 운영|
 |역할|설계·구축·운영 주도 (사내 장애예방 과제 수행)|
 |규모|IDC 서버 4대 → 이후 AWS EC2 워커를 붙여 하이브리드로 확장|
 |스택|Rocky Linux 8.10, RKE2 v1.31, Rancher, cert-manager, Helm 3, Harbor, GitLab CE, GitLab Runner(Docker executor + DinD)|
