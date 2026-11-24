@@ -3,7 +3,7 @@ title: "쿠버네티스 위에 Airflow 올리기: Helm·git-sync·KubernetesPodO
 excerpt: "1편에서 만든 RKE2 클러스터 위에 Airflow를 Helm으로 배포하고, git-sync로 DAG을 배포하고, KubernetesPodOperator로 task마다 Pod를 띄우는 구조로 데이터 배치를 옮긴 기록이다. 서버에서 코드를 고쳐 복구하던 운영을 '같은 이미지를 다른 인자로 다시 실행'하는 운영으로 바꾼 과정과, 그 과정에서 만난 에러와 회고를 정리했다."
 categories: [kubernetes]
 tags: [airflow, kubernetes, helm, git-sync, kubernetespodoperator, data-engineering, 포트폴리오]
-date: 2026-11-13
+date: 2026-11-13 10:00:00 +0900
 last_modified_at: 2026-11-13
 ---
 

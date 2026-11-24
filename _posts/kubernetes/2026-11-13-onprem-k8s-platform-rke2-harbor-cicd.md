@@ -3,7 +3,7 @@ title: "사내 서버 4대로 쿠버네티스 플랫폼 만들기: RKE2·Helm·H
 excerpt: "흩어진 배치 서버 3대를 하나의 RKE2 클러스터로 묶고, Rancher·Helm으로 플랫폼 컴포넌트를 올리고, Harbor와 GitLab Runner로 이미지 빌드·배포 표준을 만든 과정을 정리했다. 폐쇄망·사설 인증서·구형 서버라는 제약 속에서 내린 선택과 트러블슈팅, 그리고 1년 넘게 운영하며 얻은 회고를 담았다."
 categories: [kubernetes]
 tags: [kubernetes, rke2, rancher, helm, harbor, gitlab-ci, on-premise, 포트폴리오]
-date: 2026-11-13
+date: 2026-11-13 09:00:00 +0900
 last_modified_at: 2026-11-13
 ---
 
